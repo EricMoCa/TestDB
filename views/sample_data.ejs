@@ -56,18 +56,13 @@
                             </div>
                         </div>
                         <div class="mb-3">
-                            <input type="submit" name="submit_button" class="btn btn-primary" value="Add" />
+                            <input type="submit" name="submit_button" class="btn btn-primary" value="Add"  href="/sample_data/add"/>
                         </div>
                     </form>
                 </div>
             </div>
             
             <% } else { %>
-                <% if(message.length > 0) { %>
-                <div class="alert alert-success">
-                    <%= message %>
-                </div>
-                <% } %>
             <div class="card">
                 <div class="card-header">
                     <div class="row">
@@ -97,11 +92,12 @@
                                 <td><%= data.complete_name %></td>
                                 <td><%= data.phone %></td>
                                 <td><%= data.email %></td>
-                                <td><%= data.date %></td>
+                                <td><%= data.day %></td>
                                 <td><%= data.time %></td>
-                                <td>
+                                <td>    
                                     <a href="/sample_data/delete/<%= data.id %>" class="btn btn-danger btn-sm">Delete</a>
                                 </td>
+                                
                             </tr>
                             <%
                                 });

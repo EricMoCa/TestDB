@@ -78,7 +78,7 @@ router.post("/add_sample_data", function(request, response, next){
 
 });*/
 
-router.post('/edit/:id', function(request, response, next){
+/*router.post('/edit/:id', function(request, response, next){
 
 	var id = request.params.id;
 
@@ -118,7 +118,7 @@ router.post('/edit/:id', function(request, response, next){
 
 });
 
-router.get('/delete/:id', function(request, response, next){
+*/router.get('/delete/:id', function(request, response, next){
 
 	var id = request.params.id; 
 
